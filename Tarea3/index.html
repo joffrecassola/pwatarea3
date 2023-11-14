@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Cards</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html {
+            height: 100%;
+        }
+        body {
+            background: linear-gradient(to bottom, #b61818, #591da8);
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            height: 6em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('1')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ej123123l Clic</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('2')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 2: Calculadora Simple</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('3')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 3: Cambio de Imagen al Pasar el Ratón</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('4')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 4: Reloj Analógico</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('5')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 5: Validación de Formulario</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('6')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 6: Lista de Tareas Interactiva</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('7')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 7: Menú de Navegación Desplegable</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('8')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 8: Carrusel de Imágenes</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('9')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 9: Temporizador de Cuenta Regresiva</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" onclick="goPage('10')">
+                    <div class="card-body">
+                        <h5 class="card-title">Ejercicio 10: Juego de Preguntas y Respuestas</h5>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script>
+        function goPage(pageNumber){
+            if (pageNumber == 8){
+                var pagUrl = 'ejercicio8/index.html';
+            window.location.href = pagUrl;
+            }else{
+                var pagUrl = 'ejercicio' + pageNumber + '.html';
+            window.location.href = pagUrl;
+            }
+            
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
